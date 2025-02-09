@@ -43,6 +43,18 @@
         font-style: normal;
       }
 
+      @keyframes gerakAtas {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(15vw); } /* Geser ke kanan */
+            100% { transform: translateY(0); } /* Kembali ke posisi awal */
+        }
+
+        @keyframes gerakBawah {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-10vw); } /* Geser ke kanan */
+            100% { transform: translateY(0); } /* Kembali ke posisi awal */
+        }
+
       /* Animasi gerak kanan-kiri */
       @keyframes gerakKananKiri {
             0% { transform: translateX(0); }
@@ -60,6 +72,16 @@
         .animasi-gerak {
             display: block;
             animation: gerakKananKiri 6s infinite ease-in-out;
+        }
+
+        .animasi-atas {
+            display: block;
+            animation: gerakAtas 6s infinite ease-in-out;
+        }
+
+        .animasi-bawah {
+            display: block;
+            animation: gerakBawah 4s infinite ease-in-out;
         }
 
         /* Styling untuk gambar */
@@ -127,14 +149,14 @@
      <div class=" overflow-x-hidden hidden content">
         <div class="flex justify-between items-center ">
             <div>
-                <img src="./images/hello3.png" alt="" class="w-[25vw] lg:w-[20vw]"/>
+                <img src="./images/hello3.png" alt="" class="w-[25vw] lg:w-[20vw] animasi-bawah"/>
             </div>
             <div>
                 <img src="./images/photo.png" alt="" class="w-[50vw] lg:w-[20vw]"/>
                 
             </div>
             <div>
-                <img src="./images/hello4.png" alt="" class="w-[25vw] mb-[25vw] lg:mb-[10vw] lg:w-[20vw]"/>
+                <img src="./images/hello4.png" alt="" class="w-[25vw] mb-[25vw] lg:mb-[10vw] lg:w-[20vw] animasi-atas"/>
             </div>
         </div>
 
@@ -153,7 +175,7 @@
             <div class="text-center ">
                 <img src="./images/cake.png" alt="" class="w-[30vw] mt-5 lg:w-[10vw] mx-auto"/>
                 <p class="text-[6vw] mt-3 lg:text-[2vw] text-[#985dbd] lilita text-center">Come and Join Us to
-                   <br> Ralinka Birthday Party</p>
+                   <br> Ralinka's Birthday Party</p>
             </div>
             <div class="absolute right-0">
                 <img src="./images/balon.png" alt="" class="w-[40vw] mt-5 mr-[-10vw] lg:w-[20vw] mx-auto"/>
@@ -224,24 +246,24 @@
 
         <div class="flex w-full mt-[6vw] lg:mt-[1vw] text-center">
           <div>
-            <img src="./images/kitty2.png" alt="" class="w-[33vw]  lg:w-[20vw] mx-auto"/>
+            <img src="./images/kitty2.png" alt="" class="w-[33vw]  lg:w-[20vw] mx-auto animasi-atas"/>
 
           </div>
           <div class="w-[40vw]">
-            <a href="#"
+            <a href="https://maps.app.goo.gl/EgbtG5txzisPbfmz5" target="_blank"
             class="bg-[#ba7be1] text-black text-center mx-auto px-5 py-2 cursor-pointer mt-[4vw] text-[5vw] lg:text-[2vw] mx-auto lilita text-[#76379d] rounded-full"
           >
             See Location
           </a>
           </div>
           <div>
-            <img src="./images/kitty3.png" alt="" class="w-[33vw] mt-5 mt-[10vw] lg:w-[20vw] mx-auto"/>
+            <img src="./images/kitty3.png" alt="" class="w-[33vw] mt-5 mt-[10vw] lg:w-[20vw] mx-auto animasi-bawah"/>
           </div>
         </div>
         <div class="text-center">
           <p class="text-[#975daf] text-[8vw] lg:text-[2vw] lilita">Dresscode:</p>
           <p class="text-[#975daf] text-[8vw] lg:text-[2vw] lilita">Black with hint of purple</p>
-          <img src="./images/people.png" alt="" class="w-[33vw]  lg:w-[10vw] mx-auto"/>
+          <img src="./images/pep-02.png" alt="" class="w-[33vw]  lg:w-[10vw] mx-auto"/>
           <p class="text-[#ba7be1] text-[5vw] lg:text-[1vw] lilita">Blessed Parents:
             <br>Fauzan & Ira</p>
         </div>
