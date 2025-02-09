@@ -71,8 +71,8 @@
     </style>
   </head>
 
-  <body class="bg-[#f2ceff] overflow-x-hidden max-w-[600px] mx-auto">
-    <div class="relative cover hidden">
+  <body class="bg-[#f2ceff] overflow-x-hidden overflow-y-hidden max-w-[600px] mx-auto">
+    <div class="relative cover">
         <div class="absolute flex justify-between h-screen w-full flex-col z-20">
             <img
             src="./images/hello2.png"
@@ -124,7 +124,7 @@
     </div>
 
     <!-- Content Isi -->
-     <div class=" overflow-x-hidden">
+     <div class=" overflow-x-hidden hidden content">
         <div class="flex justify-between items-center ">
             <div>
                 <img src="./images/hello3.png" alt="" class="w-[25vw] lg:w-[20vw]"/>
@@ -312,9 +312,12 @@
         document.addEventListener("DOMContentLoaded", function () {
           const button = document.querySelector(".cover button"); // Ambil button
           const cover = document.querySelector(".cover"); // Ambil div dengan class cover
+
+          const content = document.querySelector(".content"); // Ambil div dengan class content
       
           button.addEventListener("click", function () {
             cover.style.display = "none"; // Sembunyikan div cover
+            content.classList.remove( "hidden"); // Tampilkan div content
           });
         });
       </script>
